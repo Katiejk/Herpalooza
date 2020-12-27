@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Herpalooza</string>
+    <string name="Settings">Settings</string>
+    <string name="Info">Info</string>
+    <string name="name">Sort by Name</string>
+    <string name="type">Sort by Type</string>
+    <string name="delete">Delete All</string>
+    <string name="new2">New Entry</string>
+    <string name="add">New Entry</string>
+    <string name="title">Name</string>
+    <string name="blank" />
+    <string name="species">Species</string>
+    <string name="age">Age</string>
+    <string name="location">Location Found</string>
+    <string name="habitat">Habitat Found</string>
+    <string name="notes">Notes</string>
+    <string name="found">Found?</string>
+    <string name="typeherp">Type: </string>
+    <string name="deleteAllAlert">This action will delete all your herps! It can not be reversed. Are you sure you want to proceed?</string>
+    <string name="alert">Alert!</string>
+    <string name="pos">Delete All</string>
+    <string name="neg">Cancel</string>
+    <string name="species2">"Species: "</string>
+    <string name="refresh">Refresh</string>
+    <string name="hide">Hide Found?</string>
+    <string name="sort">Sort By...</string>
+    <string name="only_show">Only Show...</string>
+    <string name="version">1.0.0</string>
+    <string name="copyright">Copyright © 2020 Katie Karabetsos. All Rights Reserved.</string>
+    <string name="edit">Edit Entry:</string>
+
+    <string-array name="types">
+        <item>Lizard</item>
+        <item>Snake</item>
+        <item>Turtle</item>
+        <item>Tortoise</item>
+        <item>Crocodilian</item>
+        <item>Salamander</item>
+        <item>Frog</item>
+        <item>Toad</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="show">
+        <item>All</item>
+        <item>Lizard</item>
+        <item>Snake</item>
+        <item>Turtle</item>
+        <item>Tortoise</item>
+        <item>Crocodilian</item>
+        <item>Salamander</item>
+        <item>Frog</item>
+        <item>Toad</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="found">
+        <item>Show all</item>
+        <item>Hide found herps</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>Alphabetical</item>
+        <item>Type</item>
+    </string-array>
+
+    <string-array name="sexes">
+        <item>male</item>
+        <item>female</item>
+        <item>unknown</item>
+    </string-array>
+</resources>

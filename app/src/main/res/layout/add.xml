@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gecko" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="260dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/species"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="127dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#0AB811"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/notes"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/location"
+        app:layout_constraintEnd_toStartOf="@+id/sexSpinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="11dp"
+        android:entries="@array/types"
+        app:layout_constraintBottom_toTopOf="@+id/sexSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <EditText
+        android:id="@+id/species"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="@string/species"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintEnd_toStartOf="@+id/typeSpinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/sexSpinner"
+        android:layout_width="126dp"
+        android:layout_height="51dp"
+        android:entries="@array/sexes"
+        app:layout_constraintBottom_toTopOf="@+id/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/edit"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/habitat"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="@string/habitat"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="259dp"
+        android:layout_height="105dp"
+        android:ems="10"
+        android:hint="@string/notes"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="258dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="textPersonName"
+        android:text="@string/blank"
+        app:layout_constraintBottom_toTopOf="@+id/habitat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="137dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#5F8F81"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

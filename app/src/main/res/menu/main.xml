@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settingsMenu"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/Settings"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/infoMenu"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/Info"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/deleteMenu"
+        android:title="@string/delete"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/AddItem"
+        android:title="@string/new2"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/refreshMenu"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="@string/refresh"
+        app:showAsAction="ifRoom|withText" />
+</menu>

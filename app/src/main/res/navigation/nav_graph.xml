@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.kkarabet.herpalooza.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/mainToD"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/in_right"
+            app:exitAnim="@anim/out_left"
+            app:popEnterAnim="@anim/in_left"
+            app:popExitAnim="@anim/out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.kkarabet.herpalooza.ui.main.DetailsFragment"
+        android:label="DetailsFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.kkarabet.herpalooza.ui.main.SettingsFragment"
+        android:label="SettingsFragment" />
+    <action
+        android:id="@+id/action_global_settingsFragment"
+        app:destination="@id/settingsFragment"
+        app:enterAnim="@anim/in_top"
+        app:exitAnim="@anim/out_bottom"
+        app:popEnterAnim="@anim/in_bottom"
+        app:popExitAnim="@anim/out_top"
+        app:popUpToInclusive="false" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.kkarabet.herpalooza.ui.main.InfoFragment"
+        android:label="InfoFragment" />
+    <action
+        android:id="@+id/action_global_infoFragment"
+        app:destination="@id/infoFragment"
+        app:enterAnim="@anim/in_top"
+        app:exitAnim="@anim/out_bottom"
+        app:popEnterAnim="@anim/in_bottom"
+        app:popExitAnim="@anim/out_top"
+        app:popUpToInclusive="true" />
+</navigation>
